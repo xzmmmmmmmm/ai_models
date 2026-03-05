@@ -1,0 +1,17 @@
+# 忽略所有AI模型权重文件
+*.bin
+*.safetensors
+*.h5
+*.tflite
+*.msgpack
+*.mlmodel
+*.pt
+*.pth
+
+# 忽略缓存和数据集
+__pycache__/
+*.csv
+*.zip
+# 忽略具体的模型文件夹
+gpt2_model/
+qwen_model/
