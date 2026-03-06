@@ -1,5 +1,5 @@
 from test import *
-from Numerical_diff import numerical_gradient
+from Numerical_diff import numerical_gradient,cross_entropy_error
 
 class TwoLayerNet:
 
@@ -26,7 +26,7 @@ class TwoLayerNet:
     def loss(self, x, t):
         y = self.forward(x)
 
-        return cross_entorpy_error(y, t)
+        return cross_entropy_error(y, t)
     
     def acc(self, x, t):
         y = self.forward(X)
